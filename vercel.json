@@ -33,7 +33,8 @@
       "src": "/resume(sharon).pdf",
       "headers": {
         "content-type": "application/pdf",
-        "cache-control": "s-maxage=86400"
+        "cache-control": "s-maxage=86400",
+        "content-disposition": "attachment; filename=Sharon_Anto_Resume.pdf"
       },
       "dest": "/resume(sharon).pdf"
     },

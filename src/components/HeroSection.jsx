@@ -180,7 +180,6 @@ const HeroSection = () => {
                 href="/resume(sharon).pdf"
                 className="btn btn-secondary"
                 download="Sharon_Anto_Resume.pdf"
-                target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -3 }}
                 whileTap={{ scale: 0.95 }}
