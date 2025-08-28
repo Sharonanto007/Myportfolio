@@ -177,7 +177,7 @@ const HeroSection = () => {
               </motion.button>
               
               <motion.a
-                href="/resume(sharon).pdf"
+                href="/resume.pdf"
                 className="btn btn-secondary"
                 download="Sharon_Anto_Resume.pdf"
                 rel="noopener noreferrer"
