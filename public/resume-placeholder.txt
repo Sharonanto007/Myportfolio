@@ -1,0 +1,9 @@
+This is a placeholder for the resume PDF file.
+
+To add your actual resume:
+1. Create or export your resume as a PDF file
+2. Name it "resume.pdf"
+3. Place it in the public folder of your project
+4. Replace this file
+
+The portfolio website will automatically detect and use your resume.pdf file for download and preview functionality.

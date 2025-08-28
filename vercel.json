@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "headers": {
+        "cache-control": "s-maxage=31536000,immutable"
+      },
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/manifest.json"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "/resume(sharon).pdf",
+      "headers": {
+        "content-type": "application/pdf",
+        "cache-control": "s-maxage=86400"
+      },
+      "dest": "/resume(sharon).pdf"
+    },
+    {
+      "src": "/photo.jpg",
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "s-maxage=86400"
+      },
+      "dest": "/photo.jpg"
+    },
+    {
+      "src": "/images/(.*)",
+      "headers": {
+        "cache-control": "s-maxage=86400"
+      },
+      "dest": "/images/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
